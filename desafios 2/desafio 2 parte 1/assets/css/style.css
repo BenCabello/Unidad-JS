@@ -1,0 +1,12 @@
+img {
+    width: 500px;
+    margin: 30px;
+}
+
+.borderless {
+    border: none;
+}
+
+.border {
+    border: 2px solid red;
+}

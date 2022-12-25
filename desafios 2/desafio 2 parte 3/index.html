@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="numero1">
+        <option selected disabled>Seleccione un numero</option>
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+    </select>
+    <select name="" id="numero2">
+        <option selected disabled>Seleccione un numero</option>
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+    </select>
+    <select name="" id="numero3">
+        <option selected disabled>Seleccione un numero</option>
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+    </select>
+    <br>
+    <p id="resultado"></p>
+    <button id="checkearClave">Ingresar Clave</button>
+
+    <script>
+        const clave1 = "911"
+        const clave2 = "714"
+
+        document.getElementById("checkearClave").addEventListener("click", ()=> {
+            let resultado = document.getElementById("resultado")
+
+            const digito1 = document.getElementById("numero1").value
+            const digito2 = document.getElementById("numero3").value
+            const digito3 = document.getElementById("numero2").value
+
+            const clave = digito1 + digito2 + digito3
+
+            switch(clave){
+                case clave1:
+                    resultado.innerText  = "Password 1 correcta"
+                    break
+                case clave2:
+                    resultado.innerText  = "Password 2 correcta"
+                    break
+                default:
+                    resultado.innerText  = "Password incorrecto"
+            }
+        })
+    </script>
+</body>
+</html>
