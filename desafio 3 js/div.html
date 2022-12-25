@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="box" style="background-color: aqua;" id="caja1"></div>
+    <div class="box" style="background-color: blueviolet;" id="caja2"></div>
+    <div class="box" style="background-color: brown;" id="caja3"></div>
+    <div class="box" style="background-color: royalblue;" id="caja4"></div>
+
+    <script>
+        var color = ""
+
+        document.addEventListener("keydown", function(event) {
+            switch(event.key){
+            case "a" :
+                color = "blue"
+                break
+            case "s" :
+                color = "red"
+                break
+            case "d": 
+                color = "violet"
+                break
+                default:
+                    color = null
+                break
+            }
+            console.log(color)
+        })
+
+        document.getElementById('caja1').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+        document.getElementById('caja2').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+        document.getElementById('caja3').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+        document.getElementById('caja4').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+    </script>
+</body>
+</html>
