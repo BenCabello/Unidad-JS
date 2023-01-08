@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Chile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header"><img class="logo" src="./assets/img/logo portal.jpg" alt=""></header>
+
+        <div class="cantidad-encontrada">
+            <h1>Total encontrado: <span id="total"></span></h1>
+        </div>
+
+        <nav class="sidebar">
+          <h3>Cantidad de cuartos</h3>
+          <input type="number" id="cuartos">
+          <br>
+          <h3 class="sidebar-text">M²</h3>
+          <div class="metros-cuadrados">
+            <p>Desde</p>
+            <input type="number" id="m-desde">
+          </div>
+          <div>
+            <p>Hasta</p>
+            <input type="number" id="m-hasta">
+          </div>
+          <input type="button" value="Buscar" id="buscar">
+        </nav>
+
+        <section class="main-box" id="main">
+
+        </section>
+
+        <footer class="footer">
+                 
+            <div class="footer-list">
+                <ul>
+                    <li>
+                        <h2>ACERCA DE PORTAL INMOBILIARIO</h2>
+                    </li>
+                    <li>Noticias</li>
+                    <li>Empleos</li>
+                    <li>Sustentabilidad</li>
+                    <li>Inversionistas</li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+</html>
